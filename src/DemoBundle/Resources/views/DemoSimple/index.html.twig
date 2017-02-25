@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+{% block title %}Simple demo to check password{% endblock %}
+
+{% block body %}
+    <p>Hello World!</p>
+    {{ form_start(form) }}
+    {{ form_label(form.pass) }}
+    {{ form_widget(form.pass) }}
+    {{ form_end(form) }}
+
+    <button type="button">Check</button>
+{% endblock %}
+
+{% block javascripts %}
+
+    {% javascripts '@DemoBundle/Resources/js/*' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
