@@ -1,8 +1,6 @@
 # demo-pass-security-bundle
 
-This is simple demo for PassSecurityBundle
-
-https://symfony.com/doc/current/setup/file_permissions.htmlRead more about PassSecurityBundle:[PassSecurityBundle](https://github.com/Nidhognit/PassSecurityBundle).
+This is simple demo for [PassSecurityBundle](https://github.com/Nidhognit/PassSecurityBundle)
 
 # Install
 
