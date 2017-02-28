@@ -2,13 +2,25 @@
 {% block title %}Simple demo to check password{% endblock %}
 
 {% block body %}
-    <p>Simple demo example to check passwords</p>
-    {{ form_start(form) }}
-    {{ form_label(form.pass) }}
-    {{ form_widget(form.pass) }}
-    {{ form_end(form) }}
+    <h1 class="text-center">Simple demo example to check passwords</h1>
+    <div class="login-container" style="max-width: 420px; margin: auto">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        {{ form_start(form) }}
+                        <div class="form-group">
+                            {{ form_label(form.pass) }}
+                            {{ form_widget(form.pass) }}
+                        </div>
+                        {{ form_end(form) }}
+                        <button type="button" class="check-button btn btn-success btn-block">Check password in list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <button type="button" class="check-button">Check</button>
 {% endblock %}
 
 {% block javascripts %}

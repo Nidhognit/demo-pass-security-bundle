@@ -11,7 +11,7 @@ class DemoPasswordsType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
-     * @param array $options
+     * @param array                $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -19,6 +19,9 @@ class DemoPasswordsType extends AbstractType
             ->add('pass', PasswordType::class, [
                     'label' => 'Enter your password',
                     'required' => false,
+                    'attr' => [
+                        'class' => 'form-control'
+                    ]
                 ]
             );
     }
