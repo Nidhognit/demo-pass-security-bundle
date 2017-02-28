@@ -2,18 +2,20 @@
 {% block title %}Simple demo to check password{% endblock %}
 
 {% block body %}
-    <p>Hello World!</p>
+    <p>Simple demo example to check passwords</p>
     {{ form_start(form) }}
     {{ form_label(form.pass) }}
     {{ form_widget(form.pass) }}
     {{ form_end(form) }}
 
-    <button type="button">Check</button>
+    <button type="button" class="check-button">Check</button>
 {% endblock %}
 
 {% block javascripts %}
-
-    {% javascripts '@DemoBundle/Resources/js/*' %}
+    {% javascripts '@DemoBundle/Resources/js/jquery-3.1.1.min.js' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    {% javascripts '@DemoBundle/Resources/js/demoPassword.js' %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
