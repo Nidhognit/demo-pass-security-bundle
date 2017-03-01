@@ -69,4 +69,4 @@ assetic:
 
 pass_security:
     type: "file"
-    file: Pass100k
+    file: Pass1M
