@@ -1,6 +1,14 @@
 $(document).ready(function () {
+    $(document).submit(function () {
+        $('.check-button').click();
+        return false;
+    });
+
     $('.check-button').click(function () {
         var password = $('#demo_passwords_pass').val();
+        if (password.length < 2) {
+            return false;
+        }
         $.ajax({
             data: {password: password},
             type: 'POST',
@@ -20,7 +28,7 @@ $(document).ready(function () {
                 if (number > 0) {
                     $('<span>').addClass('text-danger').text('This password was found in list, his number ' + number).appendTo($answerPlace);
                 } else {
-                    $('<span>').addClass('text-success').text('This is a good password, it was not found in the list').appendTo($answerPlace);
+                    $('<span>').addClass('text-success').text('Congratulations! Your password is a hard nut to crack').appendTo($answerPlace);
                 }
             }
         });
