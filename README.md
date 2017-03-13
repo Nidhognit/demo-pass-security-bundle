@@ -6,6 +6,7 @@ This is simple demo for [PassSecurityBundle](https://github.com/Nidhognit/PassSe
 
 Website: [https://demo-pass-security-bundle.herokuapp.com](https://demo-pass-security-bundle.herokuapp.com)
 
+If you see a 500 error, reload the page after a few seconds.
 # Install
 
 First of all you mast clone repository od load code.
@@ -16,4 +17,4 @@ composer update
 
 How to install composer: [composer](https://getcomposer.org/doc/00-intro.md)
 
-If you work with macOS or Linux/BSD you probably will have problem with file permissions, how to fix this you can read in [documentation]()
+If you work with macOS or Linux/BSD you probably will have problem with file permissions, how to fix this you can read in [documentation](https://symfony.com/doc/current/setup/file_permissions.html)
